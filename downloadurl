@@ -26,7 +26,7 @@ INSTALLATION INSTRUCTIONS
        idea.bat
 
      to start the application.
-     打开cmd窗口 到安装目录的bin目录下运行 idea.bat文件。
+     打开cmd窗口 到安装目录的bin目录下运行 idea.bat文件，这个用来启动安装。
 
 
   [OPTIONAL] Changing location of "config" and "system" directory
@@ -61,6 +61,7 @@ INSTALLATION INSTRUCTIONS
      edit file "ipr.reg" (you should replace all occurrences of
      "C:\Program Files\JetBrains\IntelliJ IDEA 10.0")
      如果你的安装目录不是默认路径，编辑  ipr.reg文件 替换默认路径 到 你真正安装目录的地方。
+     注册文件用edit打开，然的后替换路径注意'\'和'\\'的写法。
   3. From "{installation home}" type:
 
        ipr.reg
