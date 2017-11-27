@@ -1,2 +1,70 @@
+
 #intellj download url:
 ## zipfile address url:  https://www.jetbrains.com/idea/download/download-thanks.html?platform=windowsZip
+
+
+IntelliJ IDEA
+
+INSTALLATION INSTRUCTIONS
+===============================================================================
+
+  Windows Installation Instructions
+  ------------------------------------------------------------------------------
+  1. Unpack the IntelliJ IDEA distribution file that you downloaded to
+     where you wish to install the program. We will refer to this destination
+     location as your {installation home} below.
+     解压文件到你要安装的目录。
+  2. [OPTIONAL] Add the "{installation home}/bin" to your PATH environmental
+     variable so that you may start IntelliJ IDEA from any directory.
+     把安装的目录的bin目录加入环境变量的path中。
+
+  3. [OPTIONAL] To adjust the value of JVM heap size open idea.exe.vmoptions and
+     modify the -Xms and -Xmx options.
+      修改jvm的堆大小  -Xms最小  -Xmx最大 不要超过你的计算机内存的一半 否则会很卡。
+  4. Open a console and cd into "{installation home}/bin" and type:
+
+       idea.bat
+
+     to start the application.
+     打开cmd窗口 到安装目录的bin目录下运行 idea.bat文件。
+
+
+  [OPTIONAL] Changing location of "config" and "system" directory
+  ------------------------------------------------------------------------------
+  By default IDEA stores all your settings under ~/.IntelliJIdea10/config directory
+  and stores data cache under ~/.IntelliJIdea10/system directory
+  (~ means your home directory). If you want to change these settings,
+  默认情况下 idea 会把你的配置放在主目录 ~/.IntelliJIdea10/config 下
+                 会把系统缓存数据放在~/.IntelliJIdea10/system目录下。
+  1. Open a console and cd into "{installation home}/bin"
+
+  2. Open file "idea.properties" in an editor. You should find strings like 
+
+     idea.system.path=${user.home}/.IntelliJIdea10/system
+
+     and
+
+     idea.config.path=${user.home}/.IntelliJIdea10/config
+
+     and change them.
+     可以通过修改 idea.properties文件的idea.system.path参数更改。
+  3. Note that we recommend to store data cache ("system" directory) at a disk 
+     with at least 1G bytes free space
+     数据缓存的空间大小建议是至少1G。
+
+  [OPTIONAL] Associate "*.ipr" files (IDEA project files) with IntelliJ IDEA
+  关联*.ipr文件
+  ------------------------------------------------------------------------------
+  1. Open a console and cd into "{installation home}/bin"
+     打开安装目录bin文件夹
+  2. If your installation directory is NOT "C:\Program Files\JetBrains\IntelliJ IDEA 10.0",
+     edit file "ipr.reg" (you should replace all occurrences of
+     "C:\Program Files\JetBrains\IntelliJ IDEA 10.0")
+     如果你的安装目录不是默认路径，编辑  ipr.reg文件 替换默认路径 到 你真正安装目录的地方。
+  3. From "{installation home}" type:
+
+       ipr.reg
+
+     to add information about "*.ipr" files to registry.
+
+
