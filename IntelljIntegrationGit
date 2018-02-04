@@ -1,1 +1,2 @@
 In intellj. you can use .ignore plugins to edit the ignore file what you don't want to commit to github.
+1. method is : select preferences-->plugins-->search file .ignore.   then click 'install' to setup into intellj.
