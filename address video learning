@@ -11,3 +11,52 @@ alt+enter.    given tips intellegince.
 
 alt+mouse left. column editing.
 
+我们应该学会使用工具的快捷方式。来提高我们的编码速度。提升效率。 Intell idea 有许多有用的功能是我们不知道的。我们需要探索这些令人激动的改变。
+1.	常用的一些快捷键：
+Ctrl+alt+insert    打开一个new…窗口选择新建。不论再工程的文件夹上还是再编辑窗口中都是打开一个new……菜单，用于新建操作。
+Alt+insert        打开一个简洁的new…窗口。如果在project的文件夹上使用就是new……，如果在类里边使用就是新建 构造函数 
+2.	live template  一个能够提高你编码效率的工具 
+main--> main函数的快写。
+Sout-->system.out.println的快写。
+Soutv-->带参数的system.out.println的快写。
+Soutm-->system.out.println(“Test main”)的快写。
+Soutp-->system.out.println(“带参数的args“+args+”)的快写。
+Soutf-->system.out.printf(“”)的快写。
+Serr -->system.err.println(“”)的快写。
+Iter -->for (String arg : args) {  }的快写
+Fori -->for(int i=0;i<tt.length;i++)的快写 
+Itco -->for (Iterator iterator = collection.iterator(); iterator.hasNext(); ) {
+                Object next =iterator.next();}
+Itar -->for (int i = 0; i < args.length; i++) {String arg = args[i];}
+
+* 在intell idea中可以使用ctrl+alt+t快速选中live template 编辑template。
+ 编辑代码的时候如果需要在选择的代码外面包含一层代码的时候可以和Ctrl+alt+t结合使用，快速填充代码。
+
+平时可以积累一些常用的快写方式，提高效率。
+3.	在类之间导航使用  alt+方向左右键，以及ctrl+鼠标click  可以方便的导航到你想去的地方和回到前面一步。这个和eclipse是一样的。
+4.	使用shift+enter可以快速进入下一行的书写位置，你可以从鼠标所在的任意位置使用它，快速到达下一行的书写位置，通常我们会空几个格来写下一行。
+5.	使用ctrl+w可以快速选择需要的块，并且任意扩大选择范围。Ctrl+Shift+w 会descrease the selection scope。
+6.	Alt+shift+上下箭头 可以将选择的块快速的上下移动。
+7.	Ctrl+alt+t 可以快速选择包含代码比如trycatch块，if块等块语句，甚至是一个匿名函数的整体代码。功能强大
+8.	Error based coding 通常使用使用频率最高的alt+enter来修正我们的错误代码。Alt+Enter是一个几乎万能的提示快捷键。
+9.	基于行的编辑快捷键： ctrl+d  复制一个新行，ctrl+y 删除一个现有的行 ctrl+x剪切 Ctrl+v粘贴剪切的行。
+10.	Ctrl+shift+enter  当在行编辑的过程中最后没有加分号。可以用这个快捷方式完成，不需要移动鼠标再打分号，而且代码中存在空格会自动剔除。
+11.	单词大小写转换  ctrl+shift+u 
+12.	 列编辑开关 alt+shift+insert  然后alt+ctrl+shift+鼠标选择
+13.	Ctrl+shift+光标左右键  就是跳过指定的字符。再按方向键就是定位在原地。某一行有空格的话可以使用 ctrl+shift+enter 完成一行代码。
+14.	当我们讲解代码的时候，希望关注代码块本身，可以使用 presentation mode for speakers模式。设置一个快捷方式即可。很有用。
+15.	我们的代码需要格式化：ctrl+alt+l格式化
+16.	注释使用ctrl+/ 或者 ctrl+shift+/
+17.	复制class  F5键    修改变量 shift+F6   F6只适合静态的修改。
+18.	Ctrl+shift+space   camel prefix in code completion动态的前缀代码自动补全。
+19.	Ctrl+alt+M   抽取方法。重构的常用方法。
+20.	改变方法的签名，ctrl+f6  弹出的对话框中使用alt+上下箭头移动签名顺序。
+21.	Ctrl+Alt+N 可以内联一些方法，自动补全。
+Executors.newFixedThreadPool(10) 
+内联为：
+new ThreadPoolExecutor(10, 10, 0L, TimeUnit.MILLISECONDS,new LinkedBlockingQueue<Runnable>())
+鼠标停在参数处使用ctrl+p可以出现参数提示！帮助完善代码。
+22.	安全删除 Alt+Delete   reflector
+23.	检查   分析代码  菜单分析代码
+
+
