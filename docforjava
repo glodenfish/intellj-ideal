@@ -1,0 +1,9 @@
+-Xrunjdwp:transport=dt_socket,server=y,address=7899,suspend=n
+
+-agentlib:jdwp=transport=dt_socket,address=5105,suspend=n,server=y
+
+
+nohup java  -jar mqtt-exchange-1.0-SNAPSHOT-lenoval.jar >/dev/null & 
+
+加入以后在intellij中配置remote, server和address可以远程调试。
+nohup java -agentlib:jdwp=transport=dt_socket,address=5105,suspend=n,server=y -jar mqtt-exchange-1.0-SNAPSHOT-lenoval.jar >/dev/null & 
